@@ -18,6 +18,10 @@
     width: 100%;
 }
 
+#navbar a.hoover {
+    color: #9bcf93;
+}
+
 #navbar a.active {
     background-color: #9bcf93;
     color: black;
