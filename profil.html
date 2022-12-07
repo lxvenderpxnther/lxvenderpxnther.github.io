@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "hu">
+<head>
+    <meta charset = "UTF-8">
+    <title>Szegedmaganzoo</title>
+    <link rel="icon" type="image/x-icon" href="pics/favicon.ico">
+    <link rel="stylesheet" href="css/style-profil.css">
+</head>
+<body>
+
+    <div>
+      <div class="mySlides fade">
+        <img src="pics/kavezo.jpg" alt="kavezo" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="pics/zoo.png" alt="zoo" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="pics/kaland.jpg" alt="kaland" style="width:100%">
+      </div>
+    </div>
+    
+    <div id="watermark">
+        <img id = "kep2" src = "pics/logocska.png" alt = "logo">
+        <h1>Szegedi Magántulajdonú Állat- és Szabadidőpark</h1>
+    </div>
+
+    <div id="navbar">
+        <a href="hirek.html">Hírek</a>
+        <a href="allataink.html">Állataink</a>
+        <a href="programok.html">Programok</a>
+        <a href="informacio.html">Információk</a>
+        <a class="active" href="#">Profil</a>
+    </div>
+
+    <div class="content">
+      <h2>Profil</h2>
+    <table>
+      <tr>
+        <td>
+            <p> <span class="bold">Teljes név:</span> Nico Hulkenberg</p>
+            <p> <span class="bold">Email cim:</span> nicohulkenber@gmail.com</p>
+            <p> <span class="bold">Telefonszam:</span> +36 30 4327592 </p>
+            <p> <span class="bold">Szultesi datum: </span> 1999 februar 12. </p>
+        </td>
+      </tr>
+    </table>
+
+    </div>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = 300;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1} 
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>

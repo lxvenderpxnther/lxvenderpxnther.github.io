@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "hu">
+<head>
+    <meta charset = "UTF-8">
+    <title>Szegedmaganzoo</title>
+    <link rel="icon" type="image/x-icon" href="pics/favicon.ico">
+    <link rel="stylesheet" href="css/style-programok.css">
+</head>
+<body>
+    
+    <div>
+        <div class="mySlides fade">
+            <img src="pics/kavezo.jpg" alt="kavezo" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="pics/zoo.png" alt="zoo" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="pics/kaland.jpg" alt="kaland" style="width:100%">
+          </div>
+    </div>
+
+    <div id="watermark">
+        <img id = "kep2" src = "pics/logocska.png" alt = "logo">
+        <h1>Szegedi Magántulajdonú Állat- és Szabadidőpark</h1>
+    </div>
+
+    <div id="navbar">
+        <a href="hirek.html">Hírek</a>
+        <a href="allataink.html">Állataink</a>
+        <a class="active" href="#">Programok</a>
+        <a href="informacio.html">Információk</a>
+        <a href="profil.html">Profil</a>
+    </div>
+
+    <div class="content">
+        <h2>Programjaink</h2>
+
+    <table>
+        <tr>
+            <td>
+                <p class="bold">Elefánt tréning</p>
+                <img src="pics/elefant-trening.png" alt="elefanteloadas">
+                <p>
+                    A szafarizás után naponta különböző időpontokban 
+                    tekinthetitek meg az elefántkifutónál a tréninget, hogy mennyire okos és intelligens óriásállatok ők valójában. 
+                    Ezt a programot a belépőjegy ára tartalmazza. A program indulásairól a parkban talál részletes tájékoztatást. 
+                </p>
+            </td>
+            <td>
+                <p class="bold">Cirkuszi előadás</p>
+                <img src="pics/cirkuszi-elooadas.png" alt="cirkuszieloadas">
+                <p>
+                    Naponta több alkalommal 40 perces cirkuszi előadást tekinthettek meg, akrobaták és artisták bemutatójával.
+                    Egy igazán látványos programnak ígérkezik, a szerencsésebbek még a műsor végén ki is próbálhatják, hogy milyen artistának lenni. 
+                    A cirkuszi előadást a belépőjegy ára tartalmazza. 
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="bold">Motoros bemutató</p>
+                <img src="pics/motoros-bemutato.png" alt="elefanteloadas">
+                <p> 
+                    Egy szintén óriási és látványos szenzáció: több mint 20 méter magasban egy kifeszített drótkötélen 
+                    fog Simet László világhírű artista végigmotorozni közel 200 méter hosszan a park területén. 
+                    Korábban ezt a produkciót a lonodni olimpia záróünnepségén láthatta a nagyérdemű közönség. 
+                    A belépőjegy tartalmazza ezt a programot.
+                </p>
+            </td>
+            <td>
+                <p class="bold">Pónilovaglás</p>
+                <img src="pics/ponilovaglas.png" alt="motorosbemutato">
+                <p>
+                    Meghatározott időszakokban a gyerekeknek lehetősége van póni hátán lovagolni a Safari Parkban. 
+                    A programot a belépőjegy ára nem tartalmazza, külön térítés (zseton) ellenében. 
+                    A zsetont a zsetonpénztárban tudod megváltani. 
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <p class="bold">Osztalykirandulas/Csoportos kiruccanás</p>
+                <img class="kep" src="pics/osztalykirandulas.jpg" alt="osztalykirandulas">
+                <p>
+                    Szeretnél barátaiddal kikapcsolódni, vagy talán a családdal akarsz elmenekülni a napi teedők elől?
+                    Vagy esetleg osztályoddal gondolkozokl valamilyen programon? Gyertek a Szegedi Magántulajdonú Állat-és Szabadidőparkba
+                    Egy felejthetetlen élmény érdekében. Csoportos kedvezmények min. 6 főtől.
+                </p>
+
+                <p>Jelentkezéshez töltse ki az alábbiakat.</p>
+
+                <form action="submit">
+                    <label for="email">Email cím: </label> <input type="email" name="email" id="email" placeholder="email@gmail.com"> <br><br>
+                    <label for="nev">Teljes név: </label> <input type="text" name="nev" id="nev" placeholder="Piska Joska"> <br><br>
+                    <label for="letszam">Létszám: </label> <input type="number" name="letszam" id="let" placeholder="6"> <label for="letszam"> fő </label> <br><br>
+                    <input type="button" value="Fogalás">
+                </form>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = 300;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1} 
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>
