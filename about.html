@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <script src="lib/typed.js" type="text/javascript"></script>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "icon" href = "pics/shortcut_icon.png">
+    <title>Tímea Szabó - About me</title>
+</head>
+<body>
+<h1>Tímea Szabó</h1>
+<div id = "navbar">
+    <a id = "color1" href = "index.html">Home</a>
+    <a id = "color2" class = "active" href = "#">About me</a>
+    <a id = "color3" href = "https://github.com/timeaszabo1217/timeaszabo1217" target = "_blank">Projects</a>
+</div>
+<div>
+    <button class = "modeswitch" onclick="mode()">
+        <img id = "mode" alt = "mode" src = "pics/lightmode.png">
+    </button>
+    <script src = "darkmode.js"></script>
+</div>
+<img id = "profile" src = "pics/profile.jpg">
+<img id = "profile_shadow" src = "pics/profile_shadow.jpg">
+<div id = "about">
+    <p>Hello,</p>
+    <p>my name is Timi.</p>
+    <br>
+    <p class = "paragraph">	I am currently studying at the University of Szeged, majoring in Computer Scientist.</p>
+    <p class = "paragraph"> My areas of interest include web developing and 3d modeling.</p>
+    <p class = "paragraph"> In love with: <span class = "auto-type"></span></p>
+    <script>
+        const typed = new Typed('.auto-type', {
+            strings: ["Cats", "Designing", "Modeling", "Programming"],
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: true
+        });
+    </script>
+    <br>
+    <button id = "resume">
+        <a href = "pics/cv.pdf" target = "_blank">Resume</a>
+    </button>
+</div>
+<a href = "https://github.com/timeaszabo1217" target = "_blank">
+    <button class = "icon" id = "github_icon"></button>
+</a>
+<a href = "https://www.linkedin.com/in/timeaszabo1217" target = "_blank">
+    <button class = "icon" id = "linkedin_icon"></button>
+</a>
+<a href = "mailto:timeaszabo1217@gmail.com" target = "_blank">
+    <button class = "icon" id = "email_icon"></button>
+</a>
+<div id = "vertical-line"></div>
+</body>
+</html>
