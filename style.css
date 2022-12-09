@@ -1,8 +1,6 @@
 :root {
     --background: rgb(246, 242, 238);
     --color: rgb(87, 69, 55);
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 @font-face {
@@ -28,8 +26,6 @@ body {
     overflow: hidden;
     width: 100%;
     transition: 0.5s background ease;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 .darkmode {
@@ -44,6 +40,8 @@ h1 {
     margin: 0;
     font-size: 30px;
     font-family: fogstaregular, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 #navbar {
