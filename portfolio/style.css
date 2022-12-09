@@ -1,0 +1,153 @@
+:root {
+    --background: rgb(246, 242, 238);
+    --color: rgb(87, 69, 55);
+}
+
+body {
+    background: var(--background);
+    color: var(--color);
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s background ease;
+}
+
+.darkmode {
+    position: absolute;
+    /*background: rgb(87, 69, 55);*/
+    /*color: rgb(246, 242, 238);*/
+    transition: 0.5s all ease;
+}
+
+h1 {
+    position: relative;
+    float: left;
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    font-family: Fogsta, sans-serif;
+
+}
+
+#navbar {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding-left: 1000px;
+    font-size: 25px;
+    font-family: Fogsta, sans-serif;
+}
+
+#navbar a {
+    position: relative;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 25px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: var(--color);
+}
+
+#navbar a:before {
+    position: absolute;
+    bottom: 20px;
+    content: '';
+    margin-left: -25px;
+    width: 100%;
+    height: 3px;
+    background: rgb(23, 23, 23);
+    transform: translateX(-25%);
+    opacity: 0;
+}
+
+#navbar a:hover {
+    transition: 0.2s all ease;
+    opacity: 0.8;
+}
+
+#navbar a:hover:before {
+    opacity: 1;
+    transition: 0.5s transform ease, 0.8s opacity ease;
+    transform: translateX(0);
+}
+
+#navbar a:active {
+    color: rgb(23, 23, 23);
+
+}
+
+#navbar a:active:hover:before {
+    opacity: 0;
+}
+
+.active {
+    opacity: 0.8;
+}
+
+.modeswitch {
+    border: none;
+    background: none;
+    padding: 10px;
+}
+
+#mode {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+#mode:hover {
+    width: 52px;
+    height: 52px;
+    padding-top: 4px;
+    transition: 0.2s all ease;
+    opacity: 0.8;
+}
+
+#mode:active {
+    transition: 0s all ease;
+    opacity: 0;
+}
+
+#profile {
+    position: fixed;
+    height: 300px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    top: 300px;
+    left: 300px;
+    z-index: 100;
+}
+
+#profile_shadow {
+    position: fixed;
+    height: 300px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    top: 325px;
+    left: 325px;
+}
+
+#about {
+    position: fixed;
+    float: right;
+    top: 300px;
+    right: 300px;
+    width: 500px;
+    font-size: 25px;
+    font-family: ReclineW05-Regular, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*rgb(131, 105, 83)*/
+/*rgb(150, 122, 188)*/
+/*rgb(87, 69, 55)*/
+/*rgb(188, 158, 126)*/
+/*rgb(23, 23, 23)*/
