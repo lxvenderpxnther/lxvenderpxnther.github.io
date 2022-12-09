@@ -12,6 +12,22 @@ body {
     transition: 0.5s background ease;
 }
 
+@font-face {
+    font-family: 'fogstaregular';
+    src: url('lib/fonts/Fogsta/fogsta-webfont.woff2') format('woff2'),
+    url('lib/fonts/Fogsta/fogsta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'reclinew05-regularregular';
+    src: url('lib/fonts/Recline/recline-regular-webfont.woff2') format('woff2'),
+    url('lib/fonts/Recline/recline-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .darkmode {
     position: absolute;
     transition: 0.5s all ease;
