@@ -5,12 +5,14 @@
 
 @font-face {
     font-family: Fogsta, sans-serif;
-    src: url("lib/fonts/Fogsta.otf") format("opentype");
+    font-display: block;
+    src: url("lib/fonts/Fogsta.woff2") format("woff2");
 }
 
 @font-face {
     font-family: ReclineW05-Regular, sans-serif;
-    src: url("lib/fonts/Recline-Regular.otf") format("opentype");
+    font-display: block;
+    src: url("lib/fonts/ReclineLightDemo-jEnOM.ttf") format("truetype");
 }
 
 body {
