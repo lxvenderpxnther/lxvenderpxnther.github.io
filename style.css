@@ -19,11 +19,6 @@
     font-style: normal;
 }
 
-* {
-    user-select: none;
-    user-modify: none;
-}
-
 body {
     background: var(--background);
     color: var(--color);
@@ -31,6 +26,7 @@ body {
     overflow: hidden;
     width: 100%;
     transition: 0.5s background ease;
+    user-select: none;
 }
 
 .darkmode {
