@@ -2,6 +2,7 @@
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
+    <script src="lib/typed.js" type="text/javascript"></script>
     <link rel = "stylesheet" href = "style.css">
     <link rel = "icon" href = "pics/shortcut_icon.png">
     <title>Tímea Szabó - About me</title>
@@ -11,7 +12,7 @@
 <div id = "navbar">
     <a id = "color1" href = "index.html">Home</a>
     <a id = "color2" class = "active" href = "#">About me</a>
-    <a id = "color3" href = "https://github.com/timeaszabo1217/timeaszabo1217" target = "_blank">Projects</a>
+    <a id = "color3" href = "projects.html">Projects</a>
 </div>
 <div>
     <button class = "modeswitch" onclick="mode()">
@@ -22,9 +23,24 @@
 <img id = "profile" src = "pics/profile.jpg">
 <img id = "profile_shadow" src = "pics/profile_shadow.jpg">
 <div id = "about">
-    <h2 class = "center">About me</h2>
-    <p>Henlo, I'm Tímea Szabó!</p>
-    <p>CAAAAT</p>
+    <p>Hello,</p>
+    <p>my name is Timi.</p>
+    <br>
+    <p class = "paragraph">	I am currently studying at the University of Szeged, majoring in Computer Scientist.</p>
+    <p class = "paragraph"> My areas of interest include web developing and 3d modeling.</p>
+    <p class = "paragraph"> In love with: <span class = "auto-type"></span></p>
+    <script>
+        const typed = new Typed('.auto-type', {
+            strings: ["Cats", "Designing", "Modeling", "Programming", "Drawing"],
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: true
+        });
+    </script>
+    <br>
+    <button id = "resume">
+        <a href = pics/cv.pdf target = "_blank">Resume</a>
+    </button>
 </div>
 </body>
 </html>
