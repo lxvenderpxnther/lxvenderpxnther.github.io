@@ -19,6 +19,11 @@
     font-style: normal;
 }
 
+* {
+    user-select: none;
+    user-modify: none;
+}
+
 body {
     background: var(--background);
     color: var(--color);
