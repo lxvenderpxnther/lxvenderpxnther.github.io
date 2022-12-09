@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'fogstaregular';
-    src: url('https://timeaszabo1217.github.io/css/font/fogsta-webfont.woff2') format('woff2'),
-         url('https://timeaszabo1217.github.io/css/font/fogsta-webfont.woff') format('woff');
+    src: url('https://timeaszabo1217.github.io/lib/fonts/fogsta-webfont.woff2') format('woff2'),
+         url('https://timeaszabo1217.github.io/lib/fonts/fogsta-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
