@@ -6,13 +6,13 @@
 @font-face {
     font-family: Fogsta;
     font-display: block;
-    src: url("lib/fonts/Fogsta.woff2");
+    src: url(lib/fonts/Fogsta.woff2);
 }
 
 @font-face {
     font-family: ReclineW05-Regular;
     font-display: block;
-    src: url("lib/fonts/ReclineLightDemo-jEnOM.ttf");
+    src: url(lib/fonts/ReclineLightDemo-jEnOM.ttf);
 }
 
 body {
