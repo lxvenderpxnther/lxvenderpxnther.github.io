@@ -3,18 +3,6 @@
     --color: rgb(87, 69, 55);
 }
 
-@font-face {
-    font-family: Fogsta;
-    font-display: block;
-    src: url(lib/fonts/Fogsta.woff2);
-}
-
-@font-face {
-    font-family: ReclineW05-Regular;
-    font-display: block;
-    src: url(lib/fonts/ReclineLightDemo-jEnOM.ttf);
-}
-
 body {
     background: var(--background);
     color: var(--color);
@@ -35,7 +23,7 @@ h1 {
     padding: 20px;
     margin: 0;
     font-size: 30px;
-    font-family: Fogsta, sans-serif;
+    font-family: fogstaregular, sans-serif;
 }
 
 #navbar {
@@ -44,7 +32,7 @@ h1 {
     overflow: hidden;
     padding-left: 1000px;
     font-size: 25px;
-    font-family: Fogsta, sans-serif;
+    font-family: fogstaregular, sans-serif;
 }
 
 #navbar a {
@@ -132,7 +120,7 @@ button:active:hover {
     height: 32px;
     width: 120px;
     color: var(--background);
-    font-family: ReclineW05-Regular, sans-serif;
+    font-family: reclinew05-regularregular, sans-serif;
     font-size: 18px;
     margin-left: 240px;
 }
@@ -204,7 +192,7 @@ button:active:hover {
     left: 850px;
     width: 600px;
     font-size: 25px;
-    font-family: ReclineW05-Regular, sans-serif;
+    font-family: reclinew05-regularregular, sans-serif;
 }
 
 p {
@@ -226,3 +214,4 @@ p {
 /*rgb(87, 69, 55)*/
 /*rgb(188, 158, 126)*/
 /*rgb(23, 23, 23)*/
+
