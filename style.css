@@ -26,16 +26,16 @@ body {
     overflow: hidden;
     width: 100%;
     transition: 0.5s background ease;
+    white-space: nowrap;
 }
 
-.user-none {
+.user-select-none {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-drag: none;
     pointer-events: none;
-    white-space: nowrap;
 }
 
 .darkmode {
