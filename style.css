@@ -28,6 +28,11 @@ body {
     transition: 0.5s background ease;
 }
 
+body {
+    user-select: none
+;
+}
+
 .darkmode {
     position: absolute;
     transition: 0.5s all ease;
@@ -40,8 +45,6 @@ h1 {
     margin: 0;
     font-size: 30px;
     font-family: fogstaregular, sans-serif;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 #navbar {
