@@ -23,7 +23,7 @@
 <img class = "user-select-none" id = "profile" src = "pics/profile.jpg">
 <img class = "user-select-none" id = "profile_shadow" src = "pics/profile_shadow.jpg">
 <script>
-    document.getElementsByTagName("img").onmousedown(function (e) {
+    document.getElementById("profile").onmousedown(function (e) {
         if(e.button === 2) {
             return false;
         }
