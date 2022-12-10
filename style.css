@@ -28,7 +28,7 @@ body {
     transition: 0.5s background ease;
 }
 
-*, #navbar a, #resume, p {
+*, #navbar a, #resume, #about {
     user-select: none
 ;
 }
