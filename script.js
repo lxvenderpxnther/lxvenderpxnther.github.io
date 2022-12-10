@@ -36,7 +36,7 @@ function mode() {
 }
 
 function image() {
-    document.getElementById("profile").onmousedown(function (e) {
+    document.getElementById("profile").onmousedown(function(e) {
         if(e.button === 2) {
             return false;
         }
