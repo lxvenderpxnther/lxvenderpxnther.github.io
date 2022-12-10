@@ -28,13 +28,13 @@ body {
     transition: 0.5s background ease;
 }
 
-.user-select-none {
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-drag: none;
-}
+/*.user-select-none {*/
+/*    user-select: none;*/
+/*    -webkit-user-select: none;*/
+/*    -moz-user-select: none;*/
+/*    -ms-user-select: none;*/
+/*    -webkit-user-drag: none;*/
+/*}*/
 
 .darkmode {
     position: absolute;
@@ -95,7 +95,6 @@ h1 {
 
 #navbar a:active {
     color: rgb(23, 23, 23);
-
 }
 
 #navbar a:active:hover:before {
