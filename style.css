@@ -98,7 +98,7 @@ h1 {
 
 }
 
-#navbar a:active:hover:before {
+#navbar a:hover:before {
     opacity: 0;
 }
 
