@@ -36,10 +36,10 @@ function mode() {
 }
 
 function image() {
-    document.getElementById("profile").onmousedown(function(e) {
-        if(e.button === 2) {
+    document.getElementById("profile").bind('contextmenu', function() {
+        // if(e.button === 2) {
             return false;
-        }
+        // }
     });
 }
 
