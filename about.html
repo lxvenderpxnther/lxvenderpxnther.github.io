@@ -20,8 +20,8 @@
     </button>
     <script src = "darkmode.js"></script>
 </div>
-<img class = "user-select-none" id = "profile" src = "pics/profile.jpg">
-<img class = "user-select-none" id = "profile_shadow" src = "pics/profile_shadow.jpg">
+<img class = "user-select-none" id = "profile" src = "pics/profile.jpg" alt = "profile">
+<img class = "user-select-none" id = "profile_shadow" src = "pics/profile_shadow.jpg" alt = "profile_shadow">
 <script>
     document.getElementById("profile").onmousedown(function (e) {
         if(e.button === 2) {
@@ -37,7 +37,7 @@
     <p class = "paragraph"> My areas of interest include web developing and 3d modeling.</p>
     <p class = "paragraph"> In love with: <span class = "auto-type"></span></p>
     <script>
-        const typed = new Typed('.auto-type', {
+        new Typed('.auto-type', {
             strings: ["Cats", "Designing", "Modeling", "Programming"],
             typeSpeed: 50,
             backSpeed: 20,
