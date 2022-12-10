@@ -26,6 +26,7 @@ body {
     overflow: hidden;
     width: 100%;
     transition: 0.5s background ease;
+    user-input: none;
 }
 
 .user-select-none {
