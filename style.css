@@ -37,6 +37,7 @@ body {
     -ms-user-select: none;
 }
 
+
 .darkmode {
     position: absolute;
     transition: 0.5s all ease;
@@ -80,7 +81,6 @@ h1 {
     height: 3px;
     background: rgb(23, 23, 23);
     transform: translateX(-25%);
-    opacity: 0;
 }
 
 #navbar a:hover {
@@ -96,7 +96,6 @@ h1 {
 
 #navbar a:active {
     color: rgb(23, 23, 23);
-
 }
 
 #navbar a:active:hover:before {
