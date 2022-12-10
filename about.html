@@ -18,16 +18,12 @@
     <button class = "modeswitch" onclick="mode()">
         <img class = "user-select-none" id = "mode" alt = "mode" src = "pics/lightmode.png">
     </button>
-    <script src = "darkmode.js"></script>
+    <script src = "script.js"></script>
 </div>
 <img class = "user-select-none" id = "profile" src = "pics/profile.jpg" alt = "profile">
 <img class = "user-select-none" id = "profile_shadow" src = "pics/profile_shadow.jpg" alt = "profile_shadow">
 <script>
-    document.getElementById("profile").onmousedown(function (e) {
-        if(e.button === 2) {
-            return false;
-        }
-    });
+    image()
 </script>
 <div class = "user-select-none" id = "about">
     <p>Hello,</p>
@@ -36,19 +32,14 @@
     <p class = "paragraph">	I am currently studying at the University of Szeged, majoring in Computer Scientist.</p>
     <p class = "paragraph"> My areas of interest include web developing and 3d modeling.</p>
     <p class = "paragraph"> In love with: <span class = "auto-type"></span></p>
-    <script>
-        new Typed('.auto-type', {
-            strings: ["Cats", "Designing", "Modeling", "Programming"],
-            typeSpeed: 50,
-            backSpeed: 20,
-            loop: true,
-        });
-    </script>
     <br>
     <button id = "resume">
         <a href = "pics/cv.pdf" target = "_blank">Resume</a>
     </button>
 </div>
+<script>
+    type();
+</script>
 <a href = "https://github.com/timeaszabo1217" target = "_blank">
     <button class = "icon" id = "github_icon"></button>
 </a>
