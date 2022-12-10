@@ -99,7 +99,7 @@ h1 {
 
 #navbar a:active {
     color: rgb(23, 23, 23);
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 button {
