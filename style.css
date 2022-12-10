@@ -93,13 +93,13 @@ h1 {
     transform: translateX(0);
 }
 
-#navbar a:active {
-    color: rgb(23, 23, 23);
-    opacity: 0.8;
-}
-
 #navbar a:after:hover:before {
     opacity: 0;
+}
+
+#navbar a:target {
+    color: rgb(23, 23, 23);
+    opacity: 0.8;
 }
 
 button {
