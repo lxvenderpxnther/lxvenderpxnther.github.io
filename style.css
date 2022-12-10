@@ -29,8 +29,7 @@ body {
 }
 
 *, #navbar a, #resume, #about {
-    user-select: none
-;
+    user-select: none;
 }
 
 .darkmode {
