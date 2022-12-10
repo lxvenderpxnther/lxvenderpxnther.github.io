@@ -26,7 +26,10 @@ body {
     overflow: hidden;
     width: 100%;
     transition: 0.5s background ease;
-    user-input: none;
+}
+
+input:active {
+    opacity: 0;
 }
 
 .user-select-none {
