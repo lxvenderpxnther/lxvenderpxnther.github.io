@@ -27,7 +27,6 @@ body {
     width: 100%;
     transition: 0.5s background ease;
     white-space: nowrap;
-    pointer-events: none;
 }
 
 .user-select-none {
@@ -35,6 +34,8 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
 }
 
 .darkmode {
