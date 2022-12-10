@@ -28,7 +28,7 @@ body {
     transition: 0.5s background ease;
 }
 
-* {
+.user-select-none {
     user-select: none;
     -webkit-user-select: none;
 }
