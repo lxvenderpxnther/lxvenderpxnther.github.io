@@ -27,6 +27,7 @@ body {
     width: 100%;
     transition: 0.5s background ease;
     white-space: nowrap;
+    user-select: none;
 }
 
 .user-select-none {
