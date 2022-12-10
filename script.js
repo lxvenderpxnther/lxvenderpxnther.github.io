@@ -35,13 +35,13 @@ function mode() {
     }
 }
 
-function image() {
-    document.getElementById("profile").onmousedown(function(e) {
-        if(e.button === 2) {
-            return false;
-        }
-    });
-}
+// function image() {
+//     document.getElementById("profile").onmousedown(function(e) {
+//         if(e.button === 2) {
+//             return false;
+//         }
+//     });
+// }
 
 function type() {
     new Typed('.auto-type', {
