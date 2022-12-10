@@ -8,11 +8,22 @@
     <title>Tímea Szabó - About me</title>
 </head>
 <body>
-<div w3-include-html="navbar.html"></div>
+<h1 class = "user-select-none">Tímea Szabó</h1>
+<div class = "user-select-none" id = "navbar">
+    <a class = "user-select-none" id = "color1" href = "index.html">Home</a>
+    <a class = "user-select-none" id = "color2" href = "#">About me</a>
+    <a class = "user-select-none" id = "color3" href = "https://github.com/timeaszabo1217/timeaszabo1217" target = "_blank">Projects</a>
+</div>
+<div>
+    <button class = "modeswitch" onclick="mode()">
+        <img class = "user-select-none" id = "mode" alt = "mode" src = "pics/lightmode.png">
+    </button>
+    <script src = "darkmode.js"></script>
+</div>
 <img class = "user-select-none" id = "profile" src = "pics/profile.jpg" alt = "profile">
 <img class = "user-select-none" id = "profile_shadow" src = "pics/profile_shadow.jpg" alt = "profile_shadow">
 <script>
-    document.getElementById("profile").onmousedown(function(e) {
+    document.getElementById("profile").onmousedown(function (e) {
         if(e.button === 2) {
             return false;
         }
