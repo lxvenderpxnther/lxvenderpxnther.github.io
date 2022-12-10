@@ -35,6 +35,7 @@ body {
 .darkmode {
     position: absolute;
     transition: 0.5s all ease;
+    user-select: none;
 }
 
 h1 {
@@ -64,6 +65,7 @@ h1 {
     margin-right: 40px;
     text-decoration: none;
     color: var(--color);
+    user-select: none;
 }
 
 #navbar a:before {
@@ -109,6 +111,7 @@ button {
     background: none;
     border: none;
     outline: none;
+    user-select: none;
 }
 
 button:active:hover {
@@ -125,6 +128,7 @@ button:active:hover {
     width: 50px;
     height: 50px;
     padding-top: 5px;
+    user-select: none;
 }
 
 #mode:hover {
@@ -148,6 +152,7 @@ button:active:hover {
 #resume a {
     text-decoration: none;
     color: var(--background);
+    user-select: none;
 }
 
 .icon {
@@ -213,15 +218,18 @@ button:active:hover {
     width: 600px;
     font-size: 25px;
     font-family: reclinew05-regularregular, sans-serif;
+    user-select: none;
 }
 
 p {
     margin: 2px;
+    user-select: none;
 }
 
 .paragraph {
     font-size: smaller;
     opacity: 0.8;
+    user-select: none;
 }
 
 .center {
