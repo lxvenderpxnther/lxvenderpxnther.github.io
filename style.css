@@ -28,7 +28,7 @@ body {
     transition: 0.5s background ease;
 }
 
-*, a, #about p {
+* {
     user-select: none;
 }
 
