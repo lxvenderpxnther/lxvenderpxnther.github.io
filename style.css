@@ -97,7 +97,7 @@ h1 {
     opacity: 0;
 }
 
-#navbar a:target {
+#navbar a:active {
     color: rgb(23, 23, 23);
     opacity: 0.8;
 }
