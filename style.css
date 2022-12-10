@@ -28,10 +28,6 @@ body {
     transition: 0.5s background ease;
 }
 
-input:active {
-    opacity: 0;
-}
-
 .user-select-none {
     user-select: none;
     -webkit-user-select: none;
@@ -136,6 +132,7 @@ img {
     width: 50px;
     height: 50px;
     padding-top: 5px;
+    user-select: none;
 }
 
 #mode:hover {
