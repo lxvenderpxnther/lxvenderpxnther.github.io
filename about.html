@@ -22,6 +22,13 @@
 </div>
 <img class = "user-select-none" id = "profile" src = "pics/profile.jpg">
 <img class = "user-select-none" id = "profile_shadow" src = "pics/profile_shadow.jpg">
+<script>
+    $('img').onmousedown(function (e) {
+        if(e.button === 2) { // right click
+            return false; // do nothing!
+        }
+    });
+</script>
 <div class = "user-select-none" id = "about">
     <p>Hello,</p>
     <p>my name is Timi.</p>
