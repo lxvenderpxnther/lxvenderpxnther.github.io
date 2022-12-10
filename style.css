@@ -95,15 +95,11 @@ h1 {
 
 #navbar a:active {
     color: rgb(23, 23, 23);
-
-}
-
-#navbar a:hover:before {
-    opacity: 0;
-}
-
-#navbar a:active {
     opacity: 0.8;
+}
+
+#navbar a:after:hover:before {
+    opacity: 0;
 }
 
 button {
