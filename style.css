@@ -119,6 +119,10 @@ button:active:hover {
     opacity: 0.8;
 }
 
+img {
+    pointer-events: none;
+}
+
 .modeswitch {
     padding: 10px;
 }
