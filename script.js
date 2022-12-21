@@ -4,7 +4,6 @@ function mode() {
     document.body.classList.toggle("darkmode");
     toggle = !toggle;
     if(toggle) {
-        img.src = 'pics/lightmode.png';
         img.style.transition = '1s all ease';
         document.body.style.color = 'rgb(87, 69, 55)';
         document.body.style.background = 'rgb(246, 242, 238)';
