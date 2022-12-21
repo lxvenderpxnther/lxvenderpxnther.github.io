@@ -4,6 +4,7 @@ function mode() {
     document.body.classList.toggle("darkmode");
     toggle = !toggle;
     if(toggle) {
+        console.log("light");
         img.src = 'pics/lightmode.png';
         img.style.transition = '1s all ease';
         document.body.style.color = 'rgb(87, 69, 55)';
@@ -19,6 +20,7 @@ function mode() {
         document.getElementById("vertical-line").style.background = 'var(--color)';
     }
     else{
+        console.log("dark");
         img.src = 'pics/darkmode.png';
         img.style.transition = '1s all ease';
         document.body.style.color = 'rgb(246, 242, 238)';
