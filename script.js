@@ -7,8 +7,8 @@ function mode() {
         console.log("light");
         img.src = 'pics/lightmode.png';
         img.style.transition = '1s all ease';
-        document.body.style.color = 'rgb(87, 69, 55)';
-        document.body.style.background = 'rgb(246, 242, 238)';
+        document.body.style.color = 'rgb(250, 250, 250)';
+        document.body.style.background = 'rgb(39, 39, 39)';
         document.getElementById("color1").style.color = 'var(--color)';
         document.getElementById("color2").style.color = 'var(--color)';
         document.getElementById("color3").style.color = 'var(--color)';
@@ -23,8 +23,8 @@ function mode() {
         console.log("dark");
         img.src = 'pics/darkmode.png';
         img.style.transition = '1s all ease';
-        document.body.style.color = 'rgb(246, 242, 238)';
-        document.body.style.background = 'rgb(87, 69, 55)';
+        document.body.style.color = 'rgb(39, 39, 39)';
+        document.body.style.background = 'rgb(250, 250, 250)';
         document.getElementById("color1").style.color = 'var(--background)';
         document.getElementById("color2").style.color = 'var(--background)';
         document.getElementById("color3").style.color = 'var(--background)';
