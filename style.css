@@ -172,19 +172,19 @@ img {
 #github_icon {
     background-image: url("pics/github_icon.png");
     background-size: cover;
-    top: 650px;
+    top: 500px;
 }
 
 #linkedin_icon {
     background-image: url("pics/linkedin_icon.png");
     background-size: cover;
-    top: 700px;
+    top: 550px;
 }
 
 #email_icon {
     background-image: url("pics/email_icon.png");
     background-size: cover;
-    top: 750px;
+    top: 600px;
 }
 
 #vertical-line {
@@ -193,7 +193,7 @@ img {
     width: 2px;
     border: 0;
     background: var(--color2);
-    top: 800px;
+    top: 650px;
     left: 41px;
 }
 
@@ -203,25 +203,26 @@ img {
     float: left;
     padding: 0;
     margin: 0;
-    top: 200px;
+    top: 250px;
     left: 300px;
     z-index: 100;
 }
 
 #profile_shadow {
     position: fixed;
+    scale: 110%;
     height: 300px;
     float: left;
     padding: 0;
     margin: 0;
-    top: 230px;
-    left: 330px;
+    top: 250px;
+    left: 300px;
 }
 
 #about {
     position: fixed;
     float: right;
-    top: 270px;
+    top: 300px;
     left: 750px;
     width: 600px;
     font-size: 25px;

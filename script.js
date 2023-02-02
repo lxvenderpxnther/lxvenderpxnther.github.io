@@ -12,7 +12,7 @@ function mode() {
         document.getElementById("color1").style.color = 'var(--color)';
         document.getElementById("color2").style.color = 'var(--color)';
         document.getElementById("color3").style.color = 'var(--color)';
-        document.getElementById("profile_shadow").src = 'pics/profile_shadow.jpg';
+        document.getElementById("profile_shadow").src = 'pics/profile_shadow.png';
         document.getElementById("resume").style.backgroundColor = 'var(--color2)';
         document.getElementsByTagName("a")[3].style.color = 'var(--background)';
         document.getElementById("github_icon").style.backgroundImage = 'url("pics/github_icon.png")';
@@ -29,7 +29,7 @@ function mode() {
         document.getElementById("color1").style.color = 'var(--background)';
         document.getElementById("color2").style.color = 'var(--background)';
         document.getElementById("color3").style.color = 'var(--background)';
-        document.getElementById("profile_shadow").src = 'pics/profile_shadow2.jpg';
+        document.getElementById("profile_shadow").src = 'pics/profile_shadow2.png';
         document.getElementById("resume").style.backgroundColor = 'var(--background)';
         document.getElementsByTagName("a")[3].style.color = 'var(--color2)';
         document.getElementById("github_icon").style.backgroundImage = 'url("pics/github_icon2.png")';
