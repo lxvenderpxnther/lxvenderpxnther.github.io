@@ -23,8 +23,11 @@ body {
     background: var(--background);
     color: var(--color);
     display: flex;
-    overflow: hidden;
+    scale: 100%;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     transition: 0.5s background ease;
 }
 
@@ -44,17 +47,19 @@ body {
 h1 {
     position: relative;
     float: left;
-    padding: 20px;
+    padding-left: 20px;
     margin: 0;
+    width: 100%;
     font-size: 30px;
     font-family: fogstaregular, sans-serif;
 }
 
 #navbar {
-    display: flex;
+    width: 100%;
+    display: block;
     position: relative;
     overflow: hidden;
-    padding-left: 100%;
+    padding-left: 250px;
     font-size: 25px;
     font-family: fogstaregular, sans-serif;
 }
@@ -65,7 +70,7 @@ h1 {
     display: block;
     text-align: center;
     padding: 25px;
-    margin-right: 40px;
+    margin-right: 20px;
     text-decoration: none;
     color: var(--color);
 }
@@ -124,7 +129,8 @@ img {
 }
 
 .modeswitch {
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 #mode {
