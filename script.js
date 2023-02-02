@@ -7,33 +7,35 @@ function mode() {
         console.log("light");
         img.src = 'pics/lightmode.png';
         img.style.transition = '1s all ease';
-        document.body.style.color = 'rgb(87, 69, 55)';
-        document.body.style.background = 'rgb(246, 242, 238)';
+        document.body.style.color = 'var(--color)';
+        document.body.style.background = 'var(--background)';
         document.getElementById("color1").style.color = 'var(--color)';
         document.getElementById("color2").style.color = 'var(--color)';
         document.getElementById("color3").style.color = 'var(--color)';
         document.getElementById("profile_shadow").src = 'pics/profile_shadow.jpg';
-        document.getElementById("resume").style.backgroundColor = 'var(--color)';
+        document.getElementById("resume").style.backgroundColor = 'var(--color2)';
+        document.getElementsByTagName("a")[3].style.color = 'var(--background)';
         document.getElementById("github_icon").style.backgroundImage = 'url("pics/github_icon.png")';
         document.getElementById("linkedin_icon").style.backgroundImage = 'url("pics/linkedin_icon.png")';
         document.getElementById("email_icon").style.backgroundImage = 'url("pics/email_icon.png")';
-        document.getElementById("vertical-line").style.background = 'var(--color)';
+        document.getElementById("vertical-line").style.background = 'var(--color2)';
     }
     else{
         console.log("dark");
         img.src = 'pics/darkmode.png';
         img.style.transition = '1s all ease';
-        document.body.style.color = 'rgb(246, 242, 238)';
-        document.body.style.background = 'rgb(87, 69, 55)';
+        document.body.style.color = 'var(--background)';
+        document.body.style.background = 'var(--color)';
         document.getElementById("color1").style.color = 'var(--background)';
         document.getElementById("color2").style.color = 'var(--background)';
         document.getElementById("color3").style.color = 'var(--background)';
         document.getElementById("profile_shadow").src = 'pics/profile_shadow2.jpg';
-        document.getElementById("resume").style.backgroundColor = 'rgb(136, 105, 87)';
+        document.getElementById("resume").style.backgroundColor = 'var(--background)';
+        document.getElementsByTagName("a")[3].style.color = 'var(--color2)';
         document.getElementById("github_icon").style.backgroundImage = 'url("pics/github_icon2.png")';
         document.getElementById("linkedin_icon").style.backgroundImage = 'url("pics/linkedin_icon2.png")';
         document.getElementById("email_icon").style.backgroundImage = 'url("pics/email_icon2.png")';
-        document.getElementById("vertical-line").style.background = 'rgb(136, 105, 87)';
+        document.getElementById("vertical-line").style.background = 'var(--background)';
     }
 }
 
@@ -47,7 +49,7 @@ function mode() {
 
 function type() {
     new Typed('.auto-type', {
-        strings: ["Cats", "Designing", "Modeling", "Programming"],
+        strings: ["Cats", "Designing", "3D Modeling", "Programming"],
         typeSpeed: 50,
         backSpeed: 20,
         loop: true,

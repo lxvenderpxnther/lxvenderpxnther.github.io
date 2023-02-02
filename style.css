@@ -1,6 +1,7 @@
 :root {
     --background: rgb(29, 29, 29);
-    --color: rgb(87, 69, 55);
+    --color: rgb(166, 133, 190);
+    --color2: rgb(129, 165, 121);
 }
 
 @font-face {
@@ -82,7 +83,7 @@ h1 {
     margin-left: -25px;
     width: 100%;
     height: 3px;
-    background: rgb(23, 23, 23);
+    background: rgb(129, 165, 121);
     transform: translateX(-25%);
     opacity: 0;
 }
@@ -147,12 +148,11 @@ img {
 }
 
 #resume {
-    background: var(--color);
+    background: var(--color2);
     border-radius: 15px;
     text-align: center;
     height: 32px;
     width: 120px;
-    color: var(--background);
     font-family: reclinew05-regularregular, sans-serif;
     font-size: 18px;
     margin-left: 240px;
@@ -192,37 +192,37 @@ img {
     height: 200px;
     width: 2px;
     border: 0;
-    background: var(--color);
+    background: var(--color2);
     top: 800px;
     left: 41px;
 }
 
 #profile {
     position: fixed;
-    height: 400px;
+    height: 300px;
     float: left;
     padding: 0;
     margin: 0;
-    top: 300px;
-    left: 350px;
+    top: 200px;
+    left: 300px;
     z-index: 100;
 }
 
 #profile_shadow {
     position: fixed;
-    height: 400px;
+    height: 300px;
     float: left;
     padding: 0;
     margin: 0;
-    top: 350px;
-    left: 400px;
+    top: 230px;
+    left: 330px;
 }
 
 #about {
     position: fixed;
     float: right;
-    top: 400px;
-    left: 850px;
+    top: 270px;
+    left: 750px;
     width: 600px;
     font-size: 25px;
     font-family: reclinew05-regularregular, sans-serif;
