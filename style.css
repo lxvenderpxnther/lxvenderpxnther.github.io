@@ -22,9 +22,8 @@
 body {
     background: var(--background);
     color: var(--color);
-    display: block;
+    display: flex;
     overflow: hidden;
-    width: 100%;
     transition: 0.5s background ease;
 }
 
