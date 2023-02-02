@@ -24,7 +24,7 @@ body {
     color: var(--color);
     display: flex;
     overflow: hidden;
-    width: 1000px;
+    width: 100%;
     transition: 0.5s background ease;
 }
 
