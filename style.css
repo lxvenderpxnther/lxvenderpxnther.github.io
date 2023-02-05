@@ -242,6 +242,17 @@ p {
     text-align: center;
 }
 
+.footer {
+    position: fixed;
+    margin-left: 0;
+    padding: 0;
+    top: 700px;
+    width: 25%;
+    color: white;
+    text-align: center;
+    font-family: reclinew05-regularregular, sans-serif;
+    font-size: 10px;
+}
 
 /*rgb(131, 105, 83)*/
 /*rgb(150, 122, 188)*/
