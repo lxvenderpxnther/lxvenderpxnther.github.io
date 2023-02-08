@@ -1,7 +1,7 @@
 RewriteEngine On
 
-#RewriteRule ^home$ index.html
-#RewriteRule ^about?$ about.html
+RewriteRule ^home$ index.html
+RewriteRule ^about?$ about.html
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html !-f
