@@ -38,7 +38,6 @@ function mode() {
         document.getElementById("email_icon").style.backgroundImage = 'url("pics/email_icon2.png")';
         document.getElementById("vertical-line").style.background = 'var(--background)';
     }
-    toggle = false;
 }
 
 // function image() {
