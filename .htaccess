@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteRule ^index$ index.html
+RewriteRule ^home$ index.html
 RewriteRule ^about?$ about.html
 
 RewriteCond %{REQUEST_FILENAME} !-d
