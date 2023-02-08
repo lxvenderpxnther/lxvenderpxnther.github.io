@@ -20,6 +20,7 @@ function mode() {
         document.getElementById("linkedin_icon").style.backgroundImage = 'url("pics/linkedin_icon.png")';
         document.getElementById("email_icon").style.backgroundImage = 'url("pics/email_icon.png")';
         document.getElementById("vertical-line").style.background = 'var(--color2)';
+        toggle = false;
     }
     else{
         console.log("dark");
@@ -37,6 +38,7 @@ function mode() {
         document.getElementById("linkedin_icon").style.backgroundImage = 'url("pics/linkedin_icon2.png")';
         document.getElementById("email_icon").style.backgroundImage = 'url("pics/email_icon2.png")';
         document.getElementById("vertical-line").style.background = 'var(--background)';
+        toggle = true;
     }
 }
 
