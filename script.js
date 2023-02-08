@@ -1,5 +1,6 @@
 let toggle = true;
 let img = document.getElementById("mode");
+
 function mode() {
     document.body.classList.toggle("darkmode");
     toggle = !toggle;
@@ -49,7 +50,7 @@ function mode() {
 
 function type() {
     new Typed('.auto-type', {
-        strings: ["Cats", "Designing", "3D Modeling", "Programming"],
+        strings: ["Cats", "Pixelart", "Designing", "Programming"],
         typeSpeed: 50,
         backSpeed: 20,
         loop: true,
