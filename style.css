@@ -4,6 +4,22 @@
     --color2: rgb(129, 165, 121);
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 @font-face {
     font-family: 'fogstaregular';
     src: url('lib/fonts/Fogsta/fogsta-webfont.woff2') format('woff2'),
@@ -126,6 +142,7 @@ button:active:hover {
 }
 
 img {
+    max-width: 100%;
     pointer-events: none;
 }
 
