@@ -1,5 +1,6 @@
 RewriteEngine On
 
+DirectoryIndex index.html
 RewriteRule ^portfolio$ index.html
 
 RewriteCond %{REQUEST_FILENAME} !-d
