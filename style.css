@@ -1,7 +1,7 @@
 :root {
-    --background: rgb(29, 29, 29);
-    --color: rgb(166, 133, 190);
-    --color2: rgb(129, 165, 121);
+    --color1: rgb(29, 29, 29);
+    --color2: rgb(166, 133, 190);
+    --color3: rgb(129, 165, 121);
 }
 
 ::-webkit-scrollbar {
@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--background);
+    background: var(--color1);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -36,21 +36,21 @@
     font-style: normal;
 }
 
-/*@media (min-width: 800px) {*/
-
-/*}*/
+@media (min-width: 800px) {
+}
 
 body {
-    background: var(--background);
-    color: var(--color);
+    background-image: url("assets/img/bggraycomplete.png");
+    background-size: 100%;
+    height: 100%;
+    color: white;
     display: flex;
+    background-repeat: no-repeat;
     scale: 100%;
-    width: 100%;
     justify-content: center;
     align-items: center;
     transition: 0.5s background ease;
-    /*overflow-x: hidden;*/
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .user-select-none {
@@ -59,77 +59,6 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-drag: none;
-}
-
-.darkmode {
-    position: absolute;
-    transition: 0.5s all ease;
-}
-
-h1 {
-    position: relative;
-    float: left;
-    padding-left: 20px;
-    margin: 0;
-    width: 100%;
-    font-size: 30px;
-    font-family: fogstaregular, sans-serif;
-}
-
-#navbar {
-    position: relative;
-    width: 100%;
-    display: block;
-    overflow: hidden;
-    padding-left: 250px;
-    font-size: 25px;
-    font-family: fogstaregular, sans-serif;
-}
-
-#navbar a {
-    position: relative;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 25px;
-    margin-right: 20px;
-    text-decoration: none;
-    color: var(--color);
-}
-
-#navbar a:before {
-    position: absolute;
-    bottom: 20px;
-    content: '';
-    margin-left: -25px;
-    width: 100%;
-    height: 3px;
-    background: rgb(129, 165, 121);
-    transform: translateX(-25%);
-    opacity: 0;
-}
-
-#navbar a:hover {
-    transition: 0.2s all ease;
-    opacity: 0.8;
-}
-
-#navbar a:hover:before {
-    opacity: 1;
-    transition: 0.5s transform ease, 0.8s opacity ease;
-    transform: translateX(0);
-}
-
-#navbar a:active {
-    color: rgb(23, 23, 23);
-}
-
-#navbar a:active:hover:before {
-    opacity: 0;
-}
-
-.active {
-    opacity: 0.8;
 }
 
 button {
@@ -151,26 +80,8 @@ img {
     pointer-events: none;
 }
 
-.modeswitch {
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-#mode {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    padding-top: 5px;
-}
-
-#mode:hover {
-    width: 52px;
-    height: 52px;
-    padding-top: 4px;
-}
-
 #resume {
-    background: var(--color2);
+    background: var(--color3);
     border-radius: 15px;
     text-align: center;
     height: 32px;
@@ -182,70 +93,38 @@ img {
 
 #resume a {
     text-decoration: none;
-    color: var(--background);
+    color: var(--color1);
 }
 
 .icon {
     height: 32px;
     width: 32px;
-    left: 25px;
+    right: 100px;
 }
 
 #github_icon {
-    background-image: url("pics/github_icon.png");
+    background-image: url("assets/img/github_icon.png");
     background-size: cover;
-    top: 500px;
+    top: 1550px;
 }
 
 #linkedin_icon {
-    background-image: url("pics/linkedin_icon.png");
+    background-image: url("assets/img/linkedin_icon.png");
     background-size: cover;
-    top: 550px;
+    top: 1650px;
 }
 
 #email_icon {
-    background-image: url("pics/email_icon.png");
+    background-image: url("assets/img/email_icon.png");
     background-size: cover;
-    top: 600px;
-}
-
-#vertical-line {
-    position: fixed;
-    height: 100px;
-    width: 2px;
-    border: 0;
-    background: var(--color2);
-    top: 650px;
-    left: 41px;
-}
-
-#profile {
-    position: fixed;
-    height: 300px;
-    float: left;
-    padding: 0;
-    margin: 0;
-    top: 250px;
-    left: 300px;
-    z-index: 100;
-}
-
-#profile_shadow {
-    position: fixed;
-    scale: 110%;
-    height: 300px;
-    float: left;
-    padding: 0;
-    margin: 0;
-    top: 250px;
-    left: 300px;
+    top: 1750px;
 }
 
 #about {
     position: fixed;
     float: right;
-    top: 300px;
-    left: 750px;
+    top: 1500px;
+    left: 400px;
     width: 700px;
     font-size: 25px;
     font-family: reclinew05-regularregular, sans-serif;
@@ -260,6 +139,10 @@ p {
     opacity: 0.8;
 }
 
+.auto-type {
+    color: var(--color3);
+}
+
 .center {
     text-align: center;
 }
@@ -268,16 +151,10 @@ p {
     position: fixed;
     margin-left: 0;
     padding: 0;
-    top: 700px;
+    top: 4100px;
     width: 25%;
     color: white;
     text-align: center;
     font-family: reclinew05-regularregular, sans-serif;
     font-size: 10px;
 }
-
-/*rgb(131, 105, 83)*/
-/*rgb(150, 122, 188)*/
-/*rgb(87, 69, 55)*/
-/*rgb(188, 158, 126)*/
-/*rgb(23, 23, 23)*/
